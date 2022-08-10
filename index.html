@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--fuente Inter-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ff3e40fb3f.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body id="body">
+    <!--Logo-->
+    <div class="logo">
+      <a href="index.html"
+        ><img src="img/Logo.png" alt="" class="img-logo" id="logo"
+      /></a>
+    </div>
+    <!--Boton dark mode-->
+    <button id="switch" class="switch">
+      <span><i class="fa-solid fa-sun"></i></span>
+      <span><i class="fa-solid fa-moon"></i></span>
+    </button>
+    <!--Texto a Encriptar-->
+      <textarea
+        type="text"
+        id="textoOriginal"
+        placeholder="Ingrese el texto aqui"
+        class="textoOriginal"
+      ></textarea>
+    <!--Botones-->
+    <div class="containerEnc">
+      <div class="discDiv">
+        <img src="img/Vector.png" alt="" class="vector" id="vector" />
+        <p class="disclaimer" id="disclaimer">
+          Solo letras y minusculas sin acentos
+        </p>
+      </div>
+      <div class="encriptarDiv" id="encr-div">
+        <button onclick="encriptar()" class="encriptar" id="btn-enc">
+          Encriptar
+        </button>
+      </div>
+      <div class="desencriptarDiv" id="desc-div">
+        <button onclick="desencriptar()" class="desencriptar" id="btn-desc">
+          Desencriptelo ya que estamos!
+        </button>
+      </div>
+    </div>
+    <!--Resultado de la encriptacion-->
+    <div class="containerRes">
+      <p id="resultado" class="textoResultado"></p>
+      <img src="img/Muñeco.png" alt="Muñeco" id="img" class="muñeco" />
+      <div class="resultado">
+        <p id="ejemplo" class="textoEjemplo">Ningun mensaje fue encontrado.</p>
+      </div>
+      <div class="resulta2">
+        <p id="resulta2" class="textoResulta2">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <div>
+          <button
+            id="copyText"
+            style="display: none"
+            onclick="copiarTexto()"
+            class="botonCopia"
+          >
+            Copiar Texto
+          </button>
+          <div class="modalCopia" id="modalCopia">
+            <div class="cabezalCopia">
+              <div class="tituloCopia">Copiaste el texto!</div>
+              <button
+                class="botonCerrar"
+                id="botonCerrar"
+                onclick="modalClose()"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="textoCopiado"><p id="textoCopiado"></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/dark-mode.js"></script>
+</html>
