@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  height: 80%;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   padding: 40px;
   position: relative;
   width: 760px;
-  height: 1631px;
+  height: 1400px;
   transition: 0.3s ease all;
 }
 
@@ -57,7 +57,7 @@ body.dark {
   flex-direction: row;
   position: relative;
   width: 577px;
-  height: 450px;
+  height: 300px;
   top: 168px;
   font-family: "Inter";
   font-style: normal;
@@ -89,7 +89,7 @@ body.dark {
   position: absolute;
   width: 680px;
   height: 67px;
-  top: 865px;
+  top: 700px;
   left: 120px;
 }
 .desencriptarDiv {
@@ -249,7 +249,7 @@ body.dark {
 .containerRes {
   position: absolute;
   width: 400px;
-  height: 890px;
+  height: 720px;
   left: 1000px;
   top: 40px;
   background: #ffffff;
@@ -260,7 +260,7 @@ body.dark {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 140% 0 0 10%;
+  padding: 105% 0 0 10%;
   gap: 16px;
   position: absolute;
   width: 336px;
@@ -271,7 +271,7 @@ body.dark {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 160% 0 0 10%;
+  padding: 120% 0 0 10%;
   gap: 16px;
   position: absolute;
   width: 336px;
